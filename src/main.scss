@@ -580,6 +580,53 @@ h2 {
             transform: translateY(0px);
           }
         }
+
+        .travelerName {
+          bottom: -100%;
+          width: 100%;
+          height: max-content;
+          background: var(--whiteColor);
+          padding: 1.5rem 1rem;
+          transition: var(--transition);
+          animation: animatedBorders 2.3s infinite;
+
+          span {
+            display: block;
+            color: black;
+            font-weight: 700;
+          }
+
+          p {
+            color: var(--PrimaryColor);
+            font-style: italic;
+          }
+        }
+
+          @keyframes animatedBorders {
+            0% {
+              border-radius: 0rem;
+              }
+
+            50% {
+              border-radius: 2rem;
+              }
+
+            100% {
+              border-radius: 0rem;
+                }
+              }
+
+        &::hover {
+          .travelerName {
+            bottom: 0;
+            transition: 1s ease-in-out;
+          }
+
+          .travelerImage {
+            bottom: 110px;
+            transition: 1s ease-in-out;
+          }
+        }
       }
     }
   }
