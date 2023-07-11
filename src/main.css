@@ -320,4 +320,177 @@ h2 {
 .search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
   font-size: 12px;
   opacity: 0.5;
+}
+
+.support .sectionContainer .titlesDiv {
+  text-align: center;
+}
+.support .sectionContainer .titlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
+.support .sectionContainer .infoDiv {
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+  background: var(--PrimaryColor);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne {
+  background: var(--colorOne);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorTwo {
+  background: var(--colorTwo);
+}
+.support .sectionContainer .infoDiv .imgDiv {
+  margin: auto;
+}
+.support .sectionContainer .infoDiv .imgDiv img {
+  width: 100%;
+  max-width: 420px;
+}
+.support .sectionContainer .infoDiv .roundedImage {
+  border-radius: 48%;
+}
+.support .sectionContainer .infoDiv .maxSizeImage {
+  max-width: 135px;
+}
+
+.info {
+  background: var(--SecondaryColor);
+}
+.info .infoContainer .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.info .infoContainer .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .infoContainer .singleCard {
+  background: var(--whiteColor);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.info .infoContainer .singleCard .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background: var(--PrimaryColor);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info .infoContainer .singleCard .iconDiv .icon {
+  color: var(--whiteColor);
+}
+.info .infoContainer .singleCard .cardTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.info .infoContainer .singleCard .colorOne {
+  background: var(--colorOne);
+}
+.info .infoContainer .singleCard .colorTwo {
+  background: var(--colorTwo);
+}
+
+.lounge .sectionContainer {
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+}
+.lounge .sectionContainer .imgDiv img.roundedImage {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 10px;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+.travelers .sectionContainer {
+  text-align: center;
+}
+.travelers .sectionContainer .travelersContainer {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler {
+  position: relative;
+  height: 320px;
+  width: 85%;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage, .travelers .sectionContainer .travelersContainer .singleTraveler .travelerName {
+  position: absolute;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .destinationImage {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.travelers .sectionContainer .travelersContainer .singleTraveler .travelerImage {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 40%;
+  transform: translateX(-50%);
+  border: 5px solid rgba(225, 225, 255, 0.637);
+  transition: var(--transition);
+  animation: animated 2.3s infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=main.css.map */
