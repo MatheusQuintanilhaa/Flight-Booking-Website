@@ -1,26 +1,39 @@
+import { useEffect } from 'react';
+
+
 // Imported Images ====>
 import imageGrid2 from '../../assets/image-grid2.jpg';
 import imageGrid3 from '../../assets/image-grid3.jpg';
 
+// Import AOS ===========>
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 const Lounge = () => {
+   //UseEffect to set animation duration ===>
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className="lounge container section">
       <div className="sectionContainer grid">
-        <div className="imgDiv">
+
+        <div data-aos='fade-down' data-aos-duration='2500' className="imgDiv">
           <img src={imageGrid2} className="roundedImage" />
         </div>
 
-        <div className="imgDiv">
+        <div data-aos='fade-left' data-aos-duration='2500' className="imgDiv">
           <img src={imageGrid3} className="roundedImage" />
         </div>
 
         <div className="textDiv">
-          <h2>Unaccompanied Minor Lounge</h2>
+          <h2  data-aos='fade-down' data-aos-duration='2500'>Unaccompanied Minor Lounge</h2>
         </div>
 
         <div className="grids grid">
 
-          <div className="singleGrid">
+          <div data-aos='fade-down' data-aos-duration='2500' className="singleGrid">
             <span className='gridTitle'>
               Help through the airport
             </span>
@@ -29,7 +42,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos='fade-down' data-aos-duration='2500' className="singleGrid">
             <span className='gridTitle'>
               Priority Boardin
             </span>
@@ -38,7 +51,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos='fade-down' data-aos-duration='2500' className="singleGrid">
             <span className='gridTitle'>
               Care on the flight
             </span>
@@ -47,7 +60,7 @@ const Lounge = () => {
             </p>
           </div>
 
-          <div className="singleGrid">
+          <div data-aos='fade-down' data-aos-duration='2500' className="singleGrid">
             <span className='gridTitle'>
               Chauffeur-drive service
             </span>
