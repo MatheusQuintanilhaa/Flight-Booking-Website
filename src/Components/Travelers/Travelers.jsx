@@ -1,8 +1,14 @@
 //Imported Destination Images =========>
 import paris from '../../assets/Paris.jpg'
+import NewYork from '../../assets/New-York.jpg'
+import RioDeJaneiro from '../../assets/Rio-de-Janeiro.jpg'
+import Dubai from '../../assets/Dubai.jpg'
 
 //Imported Traveler Images =========>
 import traveler1 from '../../assets/user(1).jpg'
+import traveler2 from '../../assets/user(2).jpeg'
+import traveler3 from '../../assets/user(3).jpg'
+import traveler4 from '../../assets/user(4).jpg'
 
 
 // Array method called Map to display all the data =========>
@@ -12,8 +18,32 @@ const travelers = [
     id: 1,
     destinationImage: paris,
     travelerImage: traveler1,
-    travelerName: 'IsraMiller',
+    travelerName: 'Isra Miller',
     socialLink: '@isramiller8'
+  },
+
+  {
+    id: 2,
+    destinationImage: NewYork,
+    travelerImage: traveler2,
+    travelerName: 'Taylor Lindsey',
+    socialLink: '@taylorlindsey'
+  },
+
+  {
+    id: 3,
+    destinationImage: RioDeJaneiro,
+    travelerImage: traveler3,
+    travelerName: 'Leonardo Brito',
+    socialLink: '@leonardobrito'
+  },
+
+  {
+    id: 4,
+    destinationImage: Dubai,
+    travelerImage: traveler4,
+    travelerName: 'Suzana Duarte',
+    socialLink: '@suzanaduarte'
   }
 ]
 
