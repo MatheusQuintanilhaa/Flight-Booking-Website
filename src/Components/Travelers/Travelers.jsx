@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 
 //Imported Destination Images =========>
 import paris from '../../assets/Paris.jpg'
-import NewYork from '../../assets/New-York.jpg'
-import RioDeJaneiro from '../../assets/Rio-de-Janeiro.jpg'
+import NewYork from '../../assets/ny.jpg'
+import RioDeJaneiro from '../../assets/rio.jpg'
 import Dubai from '../../assets/Dubai.jpg'
 
 //Imported Traveler Images =========>

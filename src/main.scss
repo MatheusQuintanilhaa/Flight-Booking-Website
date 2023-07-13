@@ -251,6 +251,7 @@ h2 {
     font-weight: 700;
     font-size: 15px;
     line-height: 2.5rem;
+    z-index: 10;
   }
 
   .homeImages {
@@ -272,10 +273,18 @@ h2 {
 
     .plane {
       position: absolute;
-      width: 100%;
-      top: 39%;
+      width: 60% !important;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) scaleX(-1);
+      margin-top: 230px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+
+      &.aos-animate {
+          opacity: 1;
+        }
+    }
 
       @media screen and (max-width: 768px) {
         width: 80%;
@@ -285,7 +294,8 @@ h2 {
       }
     }
   }
-}
+
+
 
 //Search section styling ======>
 .search {
@@ -379,8 +389,9 @@ h2 {
   .sectionContainer {
     .titlesDiv {
       text-align: center;
+
       small {
-        letter-spacing: .8rem;
+        letter-spacing: 0.8rem;
         text-transform: uppercase;
         font-size: 13px;
         color: var(--blackColor);
@@ -391,6 +402,8 @@ h2 {
     .infoDiv {
       margin-top: 2rem;
       gap: 1.5rem;
+      display: flex;
+      align-items: flex-start;
 
       .textDiv {
         gap: 1.5rem;
@@ -418,24 +431,27 @@ h2 {
       }
 
       .imgDiv {
-        margin: auto;
-        img {
-          width: 100%;
-          max-width: 420px;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: auto;
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+
+        .roundedImage {
+          border-radius: 48%;
+          max-width: 200px;
+          /* Adicione esta linha para limitar a largura da imagem */
+          height: auto;
+          /* Adicione esta linha para manter a proporção da imagem */
         }
       }
-
-      .roundedImage {
-        border-radius: 48%;
-      }
-
-
-      .maxSizeImage {
-        max-width: 135px;
-        }
     }
   }
 }
+
 
 //Info section styling ======>
 .info {
@@ -495,37 +511,129 @@ h2 {
   }
 }
 
-//Lounge section styling ======>
+.info h2 {
+  margin-top: -80px;
+}
+
+.info .btn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+// //Lounge section styling ======>
+// .lounge {
+//   .sectionContainer {
+//     gap: 1.5rem;
+
+//     .imgDiv {
+//       margin: auto;
+//       img.roundedImage {
+//         width: 100%;
+//         max-width: 430px;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .textDiv {
+//       .grids {
+//         margin-top: 1rem;
+//         gap: 1.5rem;
+
+//         .singleGrid {
+//           .gridTitle {
+//             display: block;
+//             padding-bottom: .5rem;
+//             font-weight: 500;
+//             color: var(--blackColor);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .lounge {
   .sectionContainer {
+    display: flex;
+    flex-direction: row-reverse;
     gap: 1.5rem;
 
-    .imgDiv {
-      margin: auto;
-      img.roundedImage {
-        width: 100%;
-        max-width: 430px;
-        border-radius: 10px;
-      }
-    }
-
     .textDiv {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding-left: 1rem;
+
+      h2 {
+        padding-bottom: 1rem;
+        color: var(--blackColor);
+        font-weight: 700;
+        text-align: left;
+        margin: 0;
+        align-self: flex-start;
+      }
+
       .grids {
-        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
 
         .singleGrid {
+          padding-left: 1rem;
+
           .gridTitle {
             display: block;
-            padding-bottom: .5rem;
+            padding-bottom: 0.5rem;
             font-weight: 500;
             color: var(--blackColor);
+            text-align: left;
+            margin: 0;
+          }
+
+          p {
+            text-align: left;
+            margin: 0;
           }
         }
       }
     }
   }
+
+  .imgDiv {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    img.roundedImage {
+      width: 300px;
+      /* Defina o tamanho desejado para as imagens */
+      height: auto;
+      border-radius: 10px;
+    }
+  }
 }
+
+
+
+
+
 
 //Travelers section styling ======>
 .travelers {
@@ -796,7 +904,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (max-width: 570px) {
   //Home section styling =============>
   .home {
     .mainText {
@@ -888,7 +996,7 @@ h2 {
         }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 680px) {
   //Home section styling ===========>
     .home {
       .mainText {
