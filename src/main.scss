@@ -1,6 +1,5 @@
-// import the font to use =>
+/* import the font to use => */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -27,7 +26,7 @@
   --transition: .4s ease-in-out;
 }
 
-// Default styling ======>
+/* Default styling ======> */
 body {
   background: var(--whiteColor);
 }
@@ -117,9 +116,9 @@ h2 {
   color: var(--blackColor);
 }
 
-// This is all for the default styles -
+/* This is all for the default styles - */
 
-// NavBar section styling ======>
+/* NavBar section styling ======> */
 .navBar {
   position: fixed;
   flex-direction: column;
@@ -239,7 +238,7 @@ h2 {
     }
 }
 
-//Home section styling ======>
+/* Home section styling ======> */
 .home {
   padding-top: 10rem;
   text-align: center;
@@ -297,7 +296,7 @@ h2 {
 
 
 
-//Search section styling ======>
+/*Search section styling ======> */
 .search {
   .sectionContainer {
     width: 100%;
@@ -384,7 +383,7 @@ h2 {
   }
 }
 
-//Support section styling ======>
+/*Support section styling ======> */
 .support {
   .sectionContainer {
     .titlesDiv {
@@ -453,7 +452,7 @@ h2 {
 }
 
 
-//Info section styling ======>
+/*Info section styling ======> */
 .info {
   background: var(--SecondaryColor);
   .infoContainer {
@@ -521,49 +520,7 @@ h2 {
 }
 
 
-// //Lounge section styling ======>
-// .lounge {
-//   .sectionContainer {
-//     gap: 1.5rem;
-
-//     .imgDiv {
-//       margin: auto;
-//       img.roundedImage {
-//         width: 100%;
-//         max-width: 430px;
-//         border-radius: 10px;
-//       }
-//     }
-
-//     .textDiv {
-//       .grids {
-//         margin-top: 1rem;
-//         gap: 1.5rem;
-
-//         .singleGrid {
-//           .gridTitle {
-//             display: block;
-//             padding-bottom: .5rem;
-//             font-weight: 500;
-//             color: var(--blackColor);
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
+/*Lounge section styling ======> */
 
 .lounge {
   .sectionContainer {
@@ -630,12 +587,7 @@ h2 {
   }
 }
 
-
-
-
-
-
-//Travelers section styling ======>
+/*Travelers section styling ======> */
 .travelers {
   .sectionContainer {
     text-align: center;
@@ -744,7 +696,7 @@ h2 {
   }
 }
 
-//Subscribers section styling ======>
+/*Subscribers section styling ======> */
 .subscribe {
   background: var(--SecondaryColor);
 
@@ -776,7 +728,7 @@ h2 {
   }
 }
 
-//Footer section styling ======>
+/*Footer section styling ======> */
 .footer {
   background: var(--SecondaryColor);
 
@@ -862,14 +814,14 @@ h2 {
   }
 }
 
-//MEDIA SCREEN STYLING ====================>
+/*MEDIA SCREEN STYLING ====================> */
 @media screen and (min-width: 480px) {
-  //Home section styling ===========>
+  /*Home section styling ===========> */
   .home {
     padding-top: 12rem;
   }
 
-  //Search section styling ===========>
+  /*Search section styling ===========> */
   .search {
     .sectionContainer {
       .searchInputs{
@@ -879,7 +831,7 @@ h2 {
     }
   }
 
-  //Travel section styling ===========>
+  /*Travel section styling ===========> */
   .travelers {
     .sectionContainer {
       .travelersContainer {
@@ -888,7 +840,7 @@ h2 {
     }
   }
 
-  //Subscribe section styling ===========>
+  /*Subscribe section styling ===========> */
   .subscribe {
     .sectionContainer {
       max-width: 80%;
@@ -902,7 +854,7 @@ h2 {
     }
   }
 
-  //Footer section styling ===========>
+  /*Footer section styling ===========> */
   .footer {
     .sectionContainer {
       align-items: flex-start;
