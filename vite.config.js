@@ -6,10 +6,7 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
-    external: ['./src/Components/Search/Search.jsx'],
+      external: ['react-datepicker'],
     },
   },
 });
-
-
-// edit vite config
