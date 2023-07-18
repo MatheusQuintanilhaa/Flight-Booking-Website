@@ -1,23 +1,15 @@
-import { useEffect, useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import { useEffect} from 'react';
 import { RiAccountPinCircleLine } from 'react-icons/ri';
 import { RxCalendar } from 'react-icons/rx';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const Search = () => {
-  const [checkInDate, setCheckInDate] = useState(null);
-  const [checkOutDate, setCheckOutDate] = useState(null);
+
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-
-  const searchFlights = () => {
-    console.log('Check In Date:', checkInDate);
-    console.log('Check Out Date:', checkOutDate);
-  };
 
   return (
     <div className="search container section">
@@ -60,11 +52,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Check In</h4>
-              <DatePicker
-                selected={checkInDate}
-                onChange={(date) => setCheckInDate(date)}
-                placeholderText="Add date"
-              />
+              <input type="text" placeholder="Add date" />
             </div>
           </div>
 
@@ -74,15 +62,11 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Check Out</h4>
-              <DatePicker
-                selected={checkOutDate}
-                onChange={(date) => setCheckOutDate(date)}
-                placeholderText="Add date"
-              />
+              <input type="text" placeholder="Add date" />
             </div>
           </div>
 
-          <button className="btn btnBlock flex" onClick={searchFlights}>
+          <button className="btn btnBlock flex">
             Search Flight
           </button>
         </div>
