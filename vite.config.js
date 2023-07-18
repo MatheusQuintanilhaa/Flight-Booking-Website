@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
-      external: ['react-datepicker'],
+    external: ['./src/Components/Search/Search.jsx'],
     },
   },
 });
