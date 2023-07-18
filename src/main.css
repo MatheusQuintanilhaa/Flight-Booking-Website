@@ -155,7 +155,7 @@ h2 {
 .navBar .navBarTwo .airplane-logo {
   width: 24%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navBar .navBarTwo .navBarMenu {
     position: absolute;
     background: var(--SecondaryColor);
@@ -609,6 +609,7 @@ h2 {
   outline: none;
   background: transparent;
   padding: 1rem 0.5rem;
+  width: 100%;
 }
 .subscribe .sectionContainer .inputDiv input::-moz-placeholder {
   font-size: 13px;
@@ -619,7 +620,7 @@ h2 {
   opacity: 0.5;
 }
 .subscribe .sectionContainer .inputDiv .btn {
-  width: 100%;
+  width: 200px;
 }
 
 .footer {
@@ -627,20 +628,22 @@ h2 {
 }
 .footer .sectionContainer {
   gap: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
 }
-.footer .sectionContainer .gridOne {
+.footer .gridOne {
   gap: 1rem;
-  justify-content: center;
   margin: auto;
 }
-.footer .sectionContainer .gridOne .logoDiv .Logo {
+.footer .gridOne .logoDiv .Logo {
   width: 20%;
 }
-.footer .sectionContainer .gridOne .socialIcon {
+.footer .gridOne .socialIcon {
   margin-top: 1rem;
   gap: 1rem;
 }
-.footer .sectionContainer .gridOne .socialIcon .icon {
+.footer .gridOne .socialIcon .icon {
   height: 50px;
   width: 30px;
   border-radius: 10rem;
@@ -649,29 +652,37 @@ h2 {
   padding: 0.4rem;
   color: var(--greyText);
 }
-.footer .sectionContainer .gridOne .socialIcon .icon:hover {
+.footer .gridOne .socialIcon .icon:hover {
   background: var(--PrimaryColor);
   transform: translateY(-7px);
   transition: var(--transition);
   border: 1px solid var(--PrimaryColor);
   color: var(--whiteColor);
 }
-.footer .sectionContainer .footerLinks {
-  display: grid;
+.footer .footerLinks {
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.footer .sectionContainer .footerLinks .linkTitle {
+.footer .footerLinks .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerLinks .column .linkTitle {
   color: var(--blackColor);
   font-weight: 500;
   display: block;
   padding-bottom: 1rem;
 }
-.footer .sectionContainer .footerLinks li a {
+.footer .footerLinks .column li a {
   display: block;
   color: var(--greyText);
   transition: var(--transition);
   padding: 0.3rem 0;
 }
-.footer .sectionContainer .footerLinks li a:hover {
+.footer .footerLinks .column li a:hover {
   transform: translateX(7px);
   color: var(--PrimaryColor);
 }

@@ -174,7 +174,7 @@ h2 {
         width: 24%;
         }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (min-width: 768px) {
         .navBarMenu {
           position: absolute;
           background: var(--SecondaryColor);
@@ -761,6 +761,7 @@ h2 {
         outline: none;
         background: transparent;
         padding: 1rem .5rem;
+        width: 100%;
 
         &::placeholder {
           font-size: 13px;
@@ -769,7 +770,7 @@ h2 {
       }
 
       .btn {
-        width: 100%;
+        width: 200px;
       }
     }
   }
@@ -781,44 +782,55 @@ h2 {
 
   .sectionContainer {
     gap: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
 
-    .gridOne {
-      gap: 1rem;
-      justify-content: center;
-      margin: auto;
+  .gridOne {
+    gap: 1rem;
+    margin: auto;
 
-      .logoDiv {
-        .Logo{
-          width: 20%;
-        }
-      }
-
-      .socialIcon {
-        margin-top: 1rem;
-        gap: 1rem;
-
-        .icon {
-          height: 50px;
-          width: 30px;
-          border-radius: 10rem;
-          border: 1px solid var(--borderColor);
-          box-shadow: var(--boxShadow);
-          padding: .4rem;
-          color: var(--greyText);
-
-          &:hover {
-            background: var(--PrimaryColor);
-            transform: translateY(-7px);
-            transition: var(--transition);
-            border: 1px solid var(--PrimaryColor);
-            color: var(--whiteColor);
-          }
-        }
+    .logoDiv {
+      .Logo {
+        width: 20%;
       }
     }
 
-    .footerLinks {
-      display: grid;
+    .socialIcon {
+      margin-top: 1rem;
+      gap: 1rem;
+
+      .icon {
+        height: 50px;
+        width: 30px;
+        border-radius: 10rem;
+        border: 1px solid var(--borderColor);
+        box-shadow: var(--boxShadow);
+        padding: 0.4rem;
+        color: var(--greyText);
+
+        &:hover {
+          background: var(--PrimaryColor);
+          transform: translateY(-7px);
+          transition: var(--transition);
+          border: 1px solid var(--PrimaryColor);
+          color: var(--whiteColor);
+        }
+      }
+    }
+  }
+
+  .footerLinks {
+    display: flex;
+    gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
 
       .linkTitle {
         color: var(--blackColor);
@@ -831,7 +843,7 @@ h2 {
         display: block;
         color: var(--greyText);
         transition: var(--transition);
-        padding: .3rem 0;
+        padding: 0.3rem 0;
 
         &:hover {
           transform: translateX(7px);
@@ -841,14 +853,13 @@ h2 {
     }
   }
 
-  .copyRightDiv{
+  .copyRightDiv {
     justify-content: center;
     margin-top: 1.5rem;
     padding: 1rem;
     border-top: 1px solid var(--greyText);
     text-align: center;
   }
-
 }
 
 //MEDIA SCREEN STYLING ====================>
